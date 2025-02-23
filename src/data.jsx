@@ -1,0 +1,1 @@
+export const topics = ["Depression", "Mood Swings", "Eating Habits", "Grief/Loss", "Self Esteem", "Anxiety", "Stress", "Interpersonal Issues", "Violence Issues", "Financial Concerns", "Other"];
