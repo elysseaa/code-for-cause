@@ -1,8 +1,6 @@
-import { ActionIcon, Burger, Text, Title, Button, Grid, Box, Group, Container, ScrollArea, Textarea, Stack, Paper, Avatar, Flex, Tabs } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { auth, db } from "../../config/firebase";
-import { doc, setDoc, getDoc, writeBatch, deleteField, collection, onSnapshot, addDoc, query, orderBy, Timestamp } from "firebase/firestore";
-import { topics } from "../data.jsx";
+import { Text, Title, Button, Grid, Group, Container, ScrollArea, Textarea, Paper, Avatar, Flex, Tabs } from "@mantine/core";
+import { db } from "../../config/firebase";
+import { doc, writeBatch, deleteField, collection, onSnapshot, addDoc, query, orderBy, Timestamp } from "firebase/firestore";
 import { useState, useEffect, useRef } from "react";
 
 const PersonalChat = (props) => {

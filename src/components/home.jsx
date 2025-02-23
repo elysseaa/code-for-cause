@@ -1,6 +1,6 @@
 import { ActionIcon, Text, Title, SimpleGrid, Group, Container, Stack, Paper, Avatar, Badge, Flex } from "@mantine/core";
-import { auth, db } from "../../config/firebase";
-import { doc, setDoc, getDocs, updateDoc, query, where, collection, arrayUnion, addDoc, writeBatch } from "firebase/firestore";
+import { db } from "../../config/firebase";
+import { doc, getDocs, query, where, collection, writeBatch } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 export const Home = (props) => {
@@ -163,7 +163,7 @@ export const Home = (props) => {
 
   return (
     <Container m="lg">
-      <Title order={2} mb="lg">Welcome to Mindful Evolutions!</Title>
+      <Title order={2} mb="lg">Welcome to Mindful Evolutions Therapy!</Title>
       <Stack>
         <Title order={3}>Your Chats</Title>
         <Chats chats={!userData ? {} : userData.chats}></Chats>

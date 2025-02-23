@@ -1,4 +1,4 @@
-import { AppShell, Burger, Text, Title, Group, Button, Container, Stack } from "@mantine/core";
+import { AppShell, Button, Stack } from "@mantine/core";
 
 export const Navbar = (props) => {
   const { uid, setScreen } = props;

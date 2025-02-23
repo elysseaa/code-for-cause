@@ -1,8 +1,8 @@
-import { ActionIcon, useMantineColorScheme, useComputedColorScheme, AppShell, Burger, Title, Group, Button, Stack, Paper, SimpleGrid, Text, Flex, Avatar } from "@mantine/core";
+import { ActionIcon, useMantineColorScheme, useComputedColorScheme, AppShell, Burger, Title, Group, Button, Stack, Badge, Paper, SimpleGrid, Text, Flex, Avatar } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useState, useEffect } from "react";
-import { auth, db } from "../config/firebase";
-import { doc, setDoc, getDocs, updateDoc, query, where, collection, arrayUnion, addDoc, writeBatch } from "firebase/firestore";
+import { db } from "../config/firebase";
+import { getDocs, collection } from "firebase/firestore";
 
 const Section = (props) => {
   const { title } = props;
@@ -167,10 +167,10 @@ export const Unauthenticated = (props) => {
       <AppShell.Main m="lg">
         <Stack>
           <Paper shadow="xs" p="xl" mb="md">
-            <Title order={2} mb="md">Welcome to Mindful Evolutions!</Title>
+            <Title order={2} mb="md">Welcome to Mindful Evolutions Therapy!</Title>
             <Text fz="xl">Prioritizing Your Mental Health</Text>
           </Paper>
-          <Section title="Available Chats"></Section>
+          <Section title="Available Therapists"></Section>
           <Therapists therapists={therapists}></Therapists>
         </Stack>
       </AppShell.Main>

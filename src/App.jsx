@@ -3,7 +3,7 @@ import { Authenticated } from "./authenticated";
 import { Unauthenticated } from "./unauthenticated";
 import { SignIn } from "./components/signin";
 import { auth, db } from "../config/firebase";
-import { doc, setDoc, getDoc, updateDoc } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
 
 export default function App() {

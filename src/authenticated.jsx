@@ -53,7 +53,7 @@ export const Authenticated = (props) => {
     return () => {
       unsubscribeUserData();
     }
-  }, [uid, state ]);
+  }, [uid, state]);
 
 
   const handleSignOut = async () => {

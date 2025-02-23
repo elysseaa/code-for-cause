@@ -115,7 +115,7 @@ export const SignIn = (props) => {
             height: "auto", // Prevents full-page height
           }}>
             <Stack>
-              <Title order={2} >Welcome to Mindful Evolutions!</Title>
+              <Title order={2} >Welcome to Mindful Evolutions Therapy!</Title>
               <Text>We are glad to have you here.</Text>
               <Image
                 src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_1920%2Cc_limit/BlackForest-Germany-GettyImages-147180370.jpg"
